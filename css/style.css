@@ -1,13 +1,8 @@
 @media (min-width: 320px) and (max-width: 767px) {
     
-    body {
-        display: flex;
-        flex-direction: column;
-    }
-
     .swiper-block-mobile {
         position: relative;
-        flex-grow: 1;
+        flex-grow: 14;
     }
 
     .swiper-container::before {
@@ -15,8 +10,7 @@
         content: "";
         height: 100%;
         width: 100%;
-        z-index: 2;
-        background: white;
+        z-index: 1;
         background: linear-gradient(90deg,rgba(255, 255, 255, 1) 0%, rgba(0, 0, 0, 0) 5%, rgba(0, 0, 0, 0) 95%, rgba(255, 255, 255, 1) 100%);
     }
 
