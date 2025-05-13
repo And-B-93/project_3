@@ -2,7 +2,8 @@
     
     .swiper-block-mobile {
         position: relative;
-        flex-grow: 14;
+        background-color: #F8F8F8;
+        height: 100%;
     }
 
     .swiper-container::before {
@@ -20,6 +21,7 @@
 
     .swiper-pagination {
         --swiper-pagination-top: 100px;
+        background-color: #F8F8F8;
     }
 
     .swiper-pagination .swiper-pagination-bullet {
@@ -50,13 +52,14 @@
         flex-wrap: wrap;
         justify-content: flex-start;
         padding: 16px;
+        border: 1px solid red;
     }
 
     .equipment {
         height: 72px;
         width: 240px;
         border-radius: 6px;
-        margin: 16px;
+
     }
 
 }
