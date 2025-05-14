@@ -4,15 +4,17 @@
         position: relative;
         background-color: #F8F8F8;
         height: 100%;
+        overflow: hidden;
     }
 
     .swiper-container::before {
         position: absolute;
         content: "";
         height: 100%;
-        width: 100%;
-        z-index: 1;
-        background: linear-gradient(90deg,rgba(255, 255, 255, 1) 0%, rgba(0, 0, 0, 0) 5%, rgba(0, 0, 0, 0) 95%, rgba(255, 255, 255, 1) 100%);
+        width: 5%;
+        left: 95%;
+        z-index: 10;
+        background: linear-gradient(90deg, rgba(63, 6, 6, 0) 1%, #F8F8F8 100%);
     }
 
     .swiper-container {
@@ -38,7 +40,6 @@
     .block-desktop {
         display: none;
     }
-
 }
 
 @media (min-width: 768px) and (max-width: 9999px) {
@@ -50,8 +51,7 @@
     .block-desktop {
         display: flex;
         flex-wrap: wrap;
-        justify-content: flex-start;
-        padding: 16px;
+        justify-content: space-evenly;
         border: 1px solid red;
     }
 
@@ -59,7 +59,10 @@
         height: 72px;
         width: 240px;
         border-radius: 6px;
-
+        margin-bottom:16px;
     }
 
+    .equipment:not(:nth-child(-n+20)) {
+        display: none;
+    }
 }
