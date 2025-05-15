@@ -88,9 +88,6 @@
     }
 
     .block-desktop {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
         padding: 0 1.560%;
         height: 180px;
         overflow: hidden;
@@ -101,11 +98,12 @@
     }
 
     .equipment {
+        display: inline-block;
         height: 72px;
         width: 224px;
         border: 1px solid #EAEAEA;
         border-radius: 6px;
-        margin: 8px 1.560%;
+        margin: 8px 1.4%;
     }
 
     .equipment--acer {
